@@ -160,7 +160,6 @@ def cookiecutter(
                 directory=directory,
                 skip_if_file_exists=skip_if_file_exists,
                 accept_hooks=accept_hooks,
-                keep_project_on_failure=keep_project_on_failure,
             )
         if context_for_prompting['cookiecutter']:
             context['cookiecutter'].update(
@@ -192,7 +191,6 @@ def cookiecutter(
             skip_if_file_exists=skip_if_file_exists,
             output_dir=output_dir,
             accept_hooks=accept_hooks,
-            keep_project_on_failure=keep_project_on_failure,
         )
 
     # Cleanup (if required)
